@@ -3,11 +3,9 @@ To create a dota2 hero concept webapp
 
 # Database model ideas:
 #User
-
+```
 {
-
   ID
-  
    profile {
      firstname
      lastname
@@ -19,8 +17,9 @@ To create a dota2 hero concept webapp
    comments
    heroCreated
 }
-
+```
 #Posts
+```
 {
 Owner
 Date
@@ -30,8 +29,9 @@ heroPosted
 Upvotes/Likes
 Downvotes/Dislikes
 }
-
+```
 #Comments
+```
 {
 Owner
 Date
@@ -42,8 +42,10 @@ Content
 Upvotes/Likes
 Downvotes/Dislikes
 }
-
+```
 #HeroConcept
+```
+{
 Owner : ref: User
 Date
 Skills[1,2...3..4...5...6...]
@@ -60,3 +62,5 @@ HeroStats {
    Strength
    Intelligence
    }
+}
+```
