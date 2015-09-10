@@ -3,8 +3,11 @@ To create a dota2 hero concept webapp
 
 # Database model ideas:
 #User
+
 {
+
   ID
+  
    profile {
      firstname
      lastname
