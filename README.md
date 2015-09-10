@@ -1,5 +1,5 @@
 # Dota2HeroConcept
-To create a dota2 hero concept webapp
+To create a dota2 hero concept webapp, allow users to create their own heroes and upload their own pictures or avatars for that hero and their own skills
 
 # Database model ideas:
 #User
@@ -48,7 +48,11 @@ Downvotes/Dislikes
 {
 Owner : ref: User
 Date
-Skills[1,2...3..4...5...6...]
+Skills {
+   {Skill1 : icon, description},
+   {Skill2: icon, description},
+   {Skill3: icon, description}
+ }
 TypeOfHero [Int, Strength, Agillity]
 isMeleeOrRanged [Melee, Ranged]
 HeroName
