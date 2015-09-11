@@ -1,0 +1,10 @@
+{
+  "name": "A dota2 webapp for heroes concept",
+  "description": "A barebones Node.js app using Express 4 with MongoDB, and ReactJS in Flux, using Webpack as a module bundler",
+  "repository": "https://github.com/",
+  "logo": "",
+  "keywords": ["node", "express", "static", "react", "webpack", "mongodb"],
+  "addons" : [
+  	"mongohq"
+  ]
+}
