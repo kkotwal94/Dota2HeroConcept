@@ -39,11 +39,9 @@ module.exports = function(app, passport) {
   // Retrieves all topics on any endpoint for demonstration purposes
   // If you were indeed doing this in production, you should instead only
   // query the Topics on a page that has topics
-  /*
+  
   app.get('*', function(req, res, next) {
-    Topic.find({}).exec(function(err, topics) {
-      if(!err) {
-        var topicmap = _.indexBy(topics, 'id');
+
         // We don't want to be seeding and generating markup with user information
         var user = req.user ? { authenticated: true, isWaiting: false } : { authenticated: false, isWaiting: false };
         // An object that contains response local variables scoped to the request, and therefore available only to the view(s) rendered during
@@ -51,17 +49,11 @@ module.exports = function(app, passport) {
         // This property is useful for exposing request-level information such as request path name, authenticated user, user settings, and so on.
         // pass in data to be seeded into the TopicStore
         res.locals.data =  {
-          TopicStore: { topics: topicmap},
           UserStore: { user: user }
         };
         next();
-      }else {
-        console.log('Error in first query');
-        res.status(500).send(err);
-      }
     });
-  });
-  */
+  
   // This is where the magic happens. We take the locals data we have already
   // fetched and seed our stores with data.
   // App is a function that requires store data and url to initialize and return the React-rendered html string

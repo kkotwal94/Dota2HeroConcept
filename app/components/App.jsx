@@ -25,8 +25,7 @@ export default class App extends React.Component {
   render() {
     return (
       <AltContainer stores={{
-        UserStore: UserStore,
-        TopicStore: TopicStore
+        UserStore: UserStore
       }}>
         <Navigation />
         {this.props.children}

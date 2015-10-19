@@ -28,6 +28,7 @@ exports.postLogin = function(req, res, next) {
 exports.getLogout = function(req, res, next) {
   // Do email and password validation for the server
   req.logout();
+  res.redirect('/');
   next();
 };
 
@@ -50,7 +51,7 @@ exports.postSignUp = function(req, res, next) {
       req.logIn(user, function(err) {
         if(err) return next(err);
         console.log('Successfully created');
-        res.end('Success');
+        res.redirect('/');
       });
     });
   });
