@@ -3,8 +3,8 @@ import {Link} from 'react-router';
 import UserActions from 'actions/UserActions';
 import UserStore from 'stores/UserStore';
 import Immutable from 'immutable';
-
 import styles from 'scss/components/_login';
+
 
 
 export default class Login extends React.Component {
@@ -86,7 +86,9 @@ export default class Login extends React.Component {
     }}
   return (
     <div>
+    <section className="container-fluid" id="section1">
   {renderedResult}
+  </section>
   </div>
       );
   }

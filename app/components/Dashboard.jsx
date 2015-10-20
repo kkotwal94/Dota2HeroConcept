@@ -27,7 +27,25 @@ export default class Dashboard extends React.Component {
   render() {
   	console.log(this.state.user);
     return (
-      <div>Welcome to the Dashboard</div>
+      <div>
+      <section className="container-fluid" id="section1">
+    <div className="v-center">
+        <h1 className="text-center">Dota Custom Heroes</h1>
+        <h2 className="text-center lato animate slideInDown">Change It To Say <b>Something</b> Unique</h2>
+        <p className="text-center">
+            <br/>
+            <a href="#" className="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Get Free Membership</a>
+        </p>
+    </div>
+    <a href="#section2">
+    <div className="scroll-down bounceInDown animated">
+            <span>
+                <i className="fa fa-angle-down fa-2x"></i>
+            </span>
+    </div>
+        </a>
+</section>
+      </div>
     );
   }
 }

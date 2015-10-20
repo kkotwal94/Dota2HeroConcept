@@ -26,6 +26,7 @@ export default class Signup extends React.Component {
 render() {
   return (
 	<div>
+  <section className="container-fluid" id="section1">
 	<div className={styles['wrapper2']}>
 	<div className={styles['container']}>
 		<h1>Welcome</h1>
@@ -41,6 +42,7 @@ render() {
 <p>Already have an account? <Link to="/login">Log in</Link></p>
 	</div>
 </div>
+</section>
 </div>
 			);
 	}
