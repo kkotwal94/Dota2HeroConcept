@@ -39,7 +39,11 @@ exports.getLogout = function(req, res, next) {
 exports.postSignUp = function(req, res, next) {
   var user =  new User({
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
+    profile : {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName
+    }
   });
 
   User.findOne({email: req.body.email}, function(err, existingUser) {
